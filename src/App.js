@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import Nav from "./Components/Elements/Nav";
+import "./App.css";
+import DisplayWindow from "./Components/Elements/DisplayWindow/DisplayWindow";
+import AboutMe from "./Components/Elements/AboutMe/AboutMe";
 
 function App() {
+  const navDisplay = [
+    {
+      id: "e1",
+      title: "About Me",
+    },
+    {
+      id: "e2",
+      title: "Working Projects",
+    },
+    {
+      id: "e3",
+      title: "Work History" 
+    },
+    {
+      id:"e4",
+      title: "Gallery",
+    },
+  ];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Nav items= {navDisplay}></Nav>
+      <DisplayWindow></DisplayWindow>
+      <AboutMe/>
     </div>
   );
 }
