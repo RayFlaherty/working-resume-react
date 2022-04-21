@@ -7,7 +7,7 @@ const AboutMe = () => {
     <Card>
       <div>
         <h2 className="h1Text"> ABOUT ME! </h2>
-        <p>Hello!</p>
+        <h2>Hello!</h2>
         <p>
           My name is Raymond Flaherty, I am a single father of two amazing boys
           and am looking for the next chapter in my professional life. I am a

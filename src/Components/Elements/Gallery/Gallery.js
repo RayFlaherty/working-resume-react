@@ -1,8 +1,8 @@
 import Card from "../../UI/Card";
-import './DisplayWindow.css';
+import './Gallery.css';
 
 
-const DisplayWindow = () => {
+const Gallery = () => {
   return (
     <Card>
       <div className="displayWindow-body">
@@ -12,4 +12,4 @@ const DisplayWindow = () => {
   );
 };
 
-export default DisplayWindow;
+export default Gallery;
