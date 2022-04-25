@@ -7,11 +7,11 @@
 }
 
 .smallCertStyleWidth {
-     width: 30%;
+     width: 40%;
 }
 
 .largeCertStyleWidth {
-    width: 50%;
+    width: 60%;
 }
 .certStyle{
     display: flex;
