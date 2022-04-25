@@ -1,4 +1,4 @@
-import Card from "../../UI/Card";
+import Card from "../../UI/Card/Card";
 import "./Gallery.css";
 import photo from "../../../Assets/Images/Headshot.JPG"
 
