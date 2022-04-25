@@ -15,9 +15,9 @@
   margin: 2%;
   border-radius: 10px;
   width: 60%;
-  background-color: black;
+  background-color: rgb(171, 150, 150);
 }
 
-.items {
+.item {
     margin: 2%;
 }

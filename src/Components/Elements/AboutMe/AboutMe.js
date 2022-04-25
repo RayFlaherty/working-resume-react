@@ -5,8 +5,8 @@ import "./AboutMe.css"
 const AboutMe = () => {
   return (
     <Card>
-      <div>
-        <h2 className="h1Text"> ABOUT ME! </h2>
+      <div className="header">
+        <h2 className="h1Text"> ABOUT ME </h2>
         <h2>Hello!</h2>
         <p>
           My name is Raymond Flaherty, I am a single father of two amazing boys

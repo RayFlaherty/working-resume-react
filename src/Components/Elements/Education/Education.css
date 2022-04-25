@@ -1,0 +1,36 @@
+.h1Header{
+    width: 100%;
+}
+
+.h1Text{
+    text-align: center;
+}
+
+.smallCertStyleWidth {
+     width: 30%;
+}
+
+.largeCertStyleWidth {
+    width: 50%;
+}
+.certStyle{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    border: 1px solid #ececec;
+    background-color: #2a2a2a;
+    color: white;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+.certDisplay {
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.right {
+    justify-content: right;
+}
