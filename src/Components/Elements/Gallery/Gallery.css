@@ -1,19 +1,18 @@
-.displayWindow-body{
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    height: auto;
-    border: 1px solid #ececec;
-    background-color: #2a2a2a;
-    color: white;
-    border-radius: 12px;
-    align-items: center;
-    justify-content: center;
+.displayWindow-body {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: auto;
+  border: 1px solid #ececec;
+  background-color: #2a2a2a;
+  color: white;
+  border-radius: 12px;
+  align-items: center;
 }
 
 .img-display {
-    width: auto;
-  height: 300px;
-  margin-bottom: 50px;
-  cursor: pointer;
+  display: flex;
+  width: 80%;
+  height: auto;
+  margin: 5%;
 }

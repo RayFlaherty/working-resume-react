@@ -9,17 +9,17 @@ const Nav = (props) => {
       <h1 className="Nav h1">Raymond Flaherty</h1>
 
       <nav className="navPosition">
-        <ul>
-          <li >
+        <ul className="navRow">
+          <li className="navText">
             <a data-testid="e1" href="#e1">About Me</a>
           </li>
-          <li>
+          <li className="navText">
             <a href="#workingProjects">Working Projects</a>
           </li>
-          <li>
+          <li className="navText">
             <a href="#workHistory"> Work History and Education</a>
           </li>
-          <li>
+          <li className="navText">
             <span>Contact Me</span>
           </li>
           {navDisplay.map((navDisplay) => (

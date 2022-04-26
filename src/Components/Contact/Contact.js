@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Contact.css";
 import Card from "../UI/Card/Card";
 import Button from "../UI/Button/Button";
-import styles from "../UI/Button/Button.module.css"
+import styles from "../UI/Button/Button.module.css";
 
 const Contact = () => {
   const [formState, setFormState] = useState({
@@ -62,10 +62,10 @@ const Contact = () => {
         </p>
         <div className="header">
           <Card className="contactStyle left">
-            <h1 data-testid="h1tag">Contact Me</h1>
+            <h3 data-testid="h1tag">Reach Out</h3>
             <form id="contact-form" onSubmit={handleSubmit}>
               <div>
-                <label htmlFor="name">Name:</label>
+                <label htmlFor="name">Name :</label>
                 <input
                   type="text"
                   name="name"
@@ -74,7 +74,7 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <label htmlFor="email">Email Address</label>
+                <label htmlFor="email">Email Address :</label>
                 <input
                   type="email"
                   name="email"
@@ -83,7 +83,7 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <label htmlFor="message">Message:</label>
+                <label htmlFor="message">Message :</label>
                 <textarea
                   name="message"
                   rows="5"
@@ -96,21 +96,24 @@ const Contact = () => {
                   <p className="error-text">{errorMessage}</p>
                 </div>
               )}
-              <button data-testid="button" type="submit"
-              className={styles.button}>
+              <button
+                data-testid="button"
+                type="submit"
+                className={styles.button}
+              >
                 Submit
               </button>
             </form>
           </Card>
-          <Card className= "contactStyle right">
+          <Card className="contactStyle right">
             <div>
               <h2>FIND ME!</h2>
             </div>
             <div>
-              <ul className="flex-row px-1">
-                <li className="mx-2">{linkedInElement}</li>
-                <li className="mx-2">{GitHubEl}</li>
-                <li className="mx-2">{FacebookEl}</li>
+              <ul className="contactRow">
+                <li className="contactText">{linkedInElement}</li>
+                <li className="contactText">{GitHubEl}</li>
+                <li className="contactText">{FacebookEl}</li>
               </ul>
             </div>
           </Card>

@@ -17,6 +17,16 @@
     justify-content: center;
 }
 
+.contactRow {
+    display: inline-flex;
+    width: 100%;
+
+  }
+
+  .navText {
+    margin: 2%;
+    
+  }
 .left {
     width: 30%;
 }
@@ -24,3 +34,24 @@
 .right {
     width: 60%;
 }
+
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  a:link {
+    color: red;
+  }
+  
+  a:visited {
+    color: green;
+  }
+  
+  a:hover {
+    color: red;
+  }
+  
+  a:active {
+    color: blue;
+  }
