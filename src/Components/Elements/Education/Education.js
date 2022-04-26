@@ -7,8 +7,8 @@ import Button from "../../UI/Button/Button";
 const Education = () => {
   return (
     <Card>
-      <div className="h1Header">
-        <h2 className="h1Text"> Work History and Education </h2>
+      <div className="h1Header h1Text">
+        <h2> Work History and Education </h2>
         <div>
           <div className="certDisplay">
             <Card className="certStyle smallCertStyleWidth">

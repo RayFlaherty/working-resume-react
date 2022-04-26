@@ -1,0 +1,26 @@
+.header{
+    width: 100%;
+}
+.h1Text{
+    text-align: center;
+}
+
+.contactStyle {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    border: 1px solid #ececec;
+    background-color: #2a2a2a;
+    color: white;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+.left {
+    width: 30%;
+}
+
+.right {
+    width: 60%;
+}

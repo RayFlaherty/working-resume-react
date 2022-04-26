@@ -4,6 +4,7 @@ import "./App.css";
 import AboutMe from "./Components/Elements/AboutMe/AboutMe";
 import Gallery from "./Components/Elements/Gallery/Gallery";
 import Education from "./Components/Elements/Education/Education";
+import Contact from "./Components/Contact/Contact";
 
 function App() {
   const [navDisplay] = useState([
@@ -37,6 +38,7 @@ function App() {
       <Gallery />
       <AboutMe />
       <Education/>
+      <Contact/>
     </div>
   );
 }
