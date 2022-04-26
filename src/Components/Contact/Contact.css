@@ -20,7 +20,7 @@
 .contactRow {
     display: inline-flex;
     width: 100%;
-
+    justify-content: space-between
   }
 
   .navText {
@@ -40,18 +40,3 @@
     flex-wrap: wrap;
   }
   
-  a:link {
-    color: red;
-  }
-  
-  a:visited {
-    color: green;
-  }
-  
-  a:hover {
-    color: red;
-  }
-  
-  a:active {
-    color: blue;
-  }

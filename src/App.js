@@ -14,11 +14,11 @@ function App() {
     },
     {
       id: "e2",
-      title: "Working Projects",
+      title: "Work History and Education",
     },
     {
       id: "e3",
-      title: "Work History and Education",
+      title: "Projects",
     },
     {
       id: "e4",

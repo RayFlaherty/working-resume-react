@@ -52,6 +52,10 @@ const Contact = () => {
   let FacebookEl = <p>Link</p>;
   if (state) FacebookEl = <a href={FaceBookLink}>Facebook</a>;
 
+  let InstagramLink = "https://www.instagram.com/raymondf.flaherty/";
+  let InstagramEl = <p>Link</p>;
+  if (state) InstagramEl = <a href={InstagramLink}>Instagram</a>;
+
   return (
     <Card>
       <div className="header h1Text">
@@ -60,36 +64,43 @@ const Contact = () => {
           Please feel free to explore my social media links and add me! Don't
           forget to use the contact form and send a quick shout out.
         </p>
-        <div className="header">
+        <div className="header contactRow">
           <Card className="contactStyle left">
             <h3 data-testid="h1tag">Reach Out</h3>
             <form id="contact-form" onSubmit={handleSubmit}>
               <div>
                 <label htmlFor="name">Name :</label>
-                <input
-                  type="text"
-                  name="name"
-                  defaultValue={name}
-                  onBlur={handleChange}
-                />
+                <div>
+                  {" "}
+                  <input
+                    type="text"
+                    name="name"
+                    defaultValue={name}
+                    onBlur={handleChange}
+                  />
+                </div>
               </div>
               <div>
                 <label htmlFor="email">Email Address :</label>
-                <input
-                  type="email"
-                  name="email"
-                  defaultValue={email}
-                  onBlue={handleChange}
-                />
+                <div>
+                  <input
+                    type="email"
+                    name="email"
+                    defaultValue={email}
+                    onBlue={handleChange}
+                  />
+                </div>
               </div>
               <div>
                 <label htmlFor="message">Message :</label>
-                <textarea
-                  name="message"
-                  rows="5"
-                  defaultValue={message}
-                  onBlur={handleChange}
-                />
+                <div>
+                  <textarea
+                    name="message"
+                    rows="5"
+                    defaultValue={message}
+                    onBlur={handleChange}
+                  />
+                </div>
               </div>
               {errorMessage && (
                 <div>
@@ -109,11 +120,12 @@ const Contact = () => {
             <div>
               <h2>FIND ME!</h2>
             </div>
-            <div>
+            <div className="contactRow">
               <ul className="contactRow">
-                <li className="contactText">{linkedInElement}</li>
-                <li className="contactText">{GitHubEl}</li>
-                <li className="contactText">{FacebookEl}</li>
+                <li className="">{linkedInElement}</li>
+                <li className="">{GitHubEl}</li>
+                <li className="">{FacebookEl}</li>
+                <li>{InstagramEl}</li>
               </ul>
             </div>
           </Card>

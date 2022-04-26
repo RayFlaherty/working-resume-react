@@ -14,13 +14,13 @@ const Nav = (props) => {
             <a data-testid="e1" href="#e1">About Me</a>
           </li>
           <li className="navText">
-            <a href="#workingProjects">Working Projects</a>
+            <a href="#workingProjects">Work History and Education</a>
           </li>
           <li className="navText">
-            <a href="#workHistory"> Work History and Education</a>
+            <a href="#workHistory"> Projects </a>
           </li>
           <li className="navText">
-            <span>Contact Me</span>
+            <a href="#contact">Contact Me</a>
           </li>
           {navDisplay.map((navDisplay) => (
             <li key={navDisplay.id}>
