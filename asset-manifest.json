@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/working-resume-react/static/css/main.31056a86.css",
+    "main.js": "/working-resume-react/static/js/main.b947eab1.js",
+    "static/media/Headshot.JPG": "/working-resume-react/static/media/Headshot.6ac2d01a2eadab9decb7.JPG",
+    "static/media/Post_Cert.JPG": "/working-resume-react/static/media/Post_Cert.4fc507a0ffd10630ab97.JPG",
+    "static/media/Vandy_Cert.JPG": "/working-resume-react/static/media/Vandy_Cert.d00dbd0523f0d4fb4dfe.JPG",
+    "index.html": "/working-resume-react/index.html",
+    "main.31056a86.css.map": "/working-resume-react/static/css/main.31056a86.css.map",
+    "main.b947eab1.js.map": "/working-resume-react/static/js/main.b947eab1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31056a86.css",
+    "static/js/main.b947eab1.js"
+  ]
+}
