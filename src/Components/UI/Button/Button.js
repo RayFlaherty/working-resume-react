@@ -1,14 +1,12 @@
 import React from "react";
 import styles from "./Button.module.css";
 
-
-const backToNav = ()=> {
-  console.log('click')
-  
-}
-
-const Button = () => {
-  return <button className={styles.button} oncClick={backToNav}> Back to Top </button>;
+const Button = (props) => {
+  return (
+    <button className={styles.button} type={props.type || "button"}>
+      {props.children}
+    </button>
+  );
 };
 
 export default Button;

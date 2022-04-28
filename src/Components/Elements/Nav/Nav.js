@@ -5,7 +5,7 @@ const Nav = (props) => {
   const { navDisplay = [], setCurrentNavDisplay, currentNavDisplay } = props;
 
   return (
-    <div className="Nav">
+    <div id="#nav" className="Nav">
       <h1 className="Nav h1">Raymond Flaherty</h1>
 
       <nav className="navPosition">

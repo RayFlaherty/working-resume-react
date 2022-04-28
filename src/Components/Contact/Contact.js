@@ -3,6 +3,7 @@ import "./Contact.css";
 import Card from "../UI/Card/Card";
 import Button from "../UI/Button/Button";
 import styles from "../UI/Button/Button.module.css";
+ import ContactForm from "./ContactForm/ContactForm";
 
 const Contact = () => {
   const [formState, setFormState] = useState({
@@ -64,59 +65,10 @@ const Contact = () => {
           Please feel free to explore my social media links and add me! Don't
           forget to use the contact form and send a quick shout out.
         </p>
-        <div className="header contactRow">
-          <Card className="contactStyle left">
-            <h3 data-testid="h1tag">Reach Out</h3>
-            <form id="contact-form" onSubmit={handleSubmit}>
-              <div>
-                <label htmlFor="name">Name :</label>
-                <div>
-                  {" "}
-                  <input
-                    type="text"
-                    name="name"
-                    defaultValue={name}
-                    onBlur={handleChange}
-                  />
-                </div>
-              </div>
-              <div>
-                <label htmlFor="email">Email Address :</label>
-                <div>
-                  <input
-                    type="email"
-                    name="email"
-                    defaultValue={email}
-                    onBlue={handleChange}
-                  />
-                </div>
-              </div>
-              <div>
-                <label htmlFor="message">Message :</label>
-                <div>
-                  <textarea
-                    name="message"
-                    rows="5"
-                    defaultValue={message}
-                    onBlur={handleChange}
-                  />
-                </div>
-              </div>
-              {errorMessage && (
-                <div>
-                  <p className="error-text">{errorMessage}</p>
-                </div>
-              )}
-              <button
-                data-testid="button"
-                type="submit"
-                className={styles.button}
-              >
-                Submit
-              </button>
-            </form>
-          </Card>
-          <Card className="contactStyle right">
+        <div className=" contactRow">
+          <ContactForm/>
+         
+          <Card className="contactStyle">
             <div>
               <h2>FIND ME!</h2>
             </div>
@@ -130,7 +82,7 @@ const Contact = () => {
             </div>
           </Card>
         </div>
-        <Button />
+       <Button>Back To Top</Button>
       </div>
     </Card>
   );
