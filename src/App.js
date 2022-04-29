@@ -6,6 +6,7 @@ import Gallery from "./Components/Elements/Gallery/Gallery";
 import Education from "./Components/Elements/Education/Education";
 import Contact from "./Components/Contact/Contact";
 
+
 function App() {
   const [navDisplay] = useState([
     {
@@ -27,6 +28,8 @@ function App() {
   ]);
 
   const [currentNavDisplay, setCurrentNavDisplay] = useState(navDisplay[0]);
+ 
+  
 
   return (
     <div>
@@ -37,8 +40,8 @@ function App() {
       ></Nav>
       <Gallery />
       <AboutMe />
-      <Education/>
-      <Contact/>
+      <Education />
+      <Contact />
     </div>
   );
 }
