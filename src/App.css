@@ -38,3 +38,9 @@
     transform: rotate(360deg);
   }
 }
+
+@media (min-width: 768px) {
+  div{
+    width: 100%;
+  }
+}

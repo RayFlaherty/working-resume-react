@@ -1,25 +1,32 @@
 import React from "react";
-import "./Nav.css";
+import classes from "./Nav.module.css";
+import Card from "../../UI/Card/Card";
 
 const Nav = (props) => {
   const { navDisplay = [], setCurrentNavDisplay, currentNavDisplay } = props;
 
   return (
-    <div id="#nav" className="Nav">
-      <h1 className="Nav h1">Raymond Flaherty</h1>
-
-      <nav className="navPosition">
-        <ul className="navRow">
-          <li className="navText">
-            <a data-testid="e1" href="#e1">About Me</a>
+    <Card>
+      <div className={classes.navHUD}>
+        <div>
+          <h1 className={classes.navHeader}>Raymond</h1>
+          <h1 className={classes.navHeader}>Flaherty</h1>
+        </div>
+      </div>
+      <div className={classes.navPosition}>
+        <ul className={classes.navRow}>
+          <li className={classes.navText}>
+            <a data-testid="e1" href="#e1">
+              About Me
+            </a>
           </li>
-          <li className="navText">
+          <li className={classes.navText}>
             <a href="#workingProjects">Work History and Education</a>
           </li>
-          <li className="navText">
+          <li className={classes.navText}>
             <a href="#workHistory"> Projects </a>
           </li>
-          <li className="navText">
+          <li className={classes.navText}>
             <a href="#contact">Contact Me</a>
           </li>
           {navDisplay.map((navDisplay) => (
@@ -32,14 +39,8 @@ const Nav = (props) => {
             </li>
           ))}
         </ul>
-      </nav>
-
-      {/* <div className="navPosition Width">
-            {props.items.map((props) => (
-              <div className="items">{props.title}</div>
-            ))}
-          </div> */}
-    </div>
+      </div>
+    </Card>
   );
 };
 

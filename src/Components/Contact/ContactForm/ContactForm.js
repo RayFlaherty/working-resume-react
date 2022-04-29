@@ -56,32 +56,49 @@ const ContactForm = (props) => {
 
       <Card className={classes.form}>
         <form onSubmit={sendEmail}>
-          <header>
-            <div>Email Me!</div>
-          </header>
-          <label htmlFor="name">Name:</label>
-          <input
-            id="name"
-            type="text"
-            value={enteredName}
-            onChange={nameChangeHandler}
-          ></input>
-          <label htmlFor="email">Email:</label>
-          <input
-            id="email"
-            type="text"
-            value={enteredEmail}
-            onChange={emailChangeHandler}
-          ></input>
-          <label htmlFor="message">Message:</label>
-          <input
-            id="message"
-            type="text"
-            value={enteredMessage}
-            onChange={messageChangeHandler}
-          ></input>
+          <div className={classes.formContent}>
+            <header>
+              <div>Email Me!</div>
+            </header>
+            <div>
+              <label htmlFor="name">Name</label>
+            </div>
+            <div>
+              <input
+                id="name"
+                type="text"
+                value={enteredName}
+                onChange={nameChangeHandler}
+              ></input>
+            </div>
+            <div>
+              {" "}
+              <label htmlFor="email">Email:</label>
+            </div>
+            <div>
+              <input
+                id="email"
+                type="text"
+                value={enteredEmail}
+                onChange={emailChangeHandler}
+              ></input>
+            </div>
+            <div>
+              <label htmlFor="message">Message:</label>
+            </div>
+            <div>
+              {" "}
+              <input
+              className={classes.messageHeight}
+                id="message"
+                type="text"
+                value={enteredMessage}
+                onChange={messageChangeHandler}
+              ></input>
+            </div>
 
-          <Button type="submit">Submit</Button>
+            <Button type="submit">Submit</Button>
+          </div>
         </form>
       </Card>
     </div>

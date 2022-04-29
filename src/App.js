@@ -7,6 +7,7 @@ import Education from "./Components/Elements/Education/Education";
 import Contact from "./Components/Contact/Contact";
 
 
+
 function App() {
   const [navDisplay] = useState([
     {
@@ -42,7 +43,7 @@ function App() {
       <AboutMe />
       <Education />
       <Contact />
-    </div>
+  </div>
   );
 }
 
