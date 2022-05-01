@@ -1,0 +1,33 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.cardRow {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.cardStyle {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ececec;
+  background-color: #2a2a2a;
+  border-radius: 12px;
+  justify-content: center;
+ width: 19%;
+}
+
+.linkStyle {
+  display: flex;
+  height: 90%;
+  width: 90%;
+}

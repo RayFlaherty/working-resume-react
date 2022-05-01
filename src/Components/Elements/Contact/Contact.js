@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Contact.css";
-import Card from "../UI/Card/Card";
-import Button from "../UI/Button/Button";
+import Card from "../../UI/Card/Card"
+import Button from "../../UI/Button/Button";
 
 import ContactForm from "./ContactForm/ContactForm";
 
@@ -35,7 +35,7 @@ const Contact = () => {
         <div className="header h1Text">
           <h2> Contact Info </h2>
           <p>
-            Please feel free to explore my social media links and add me! Don't
+            Please take time and enjoy exploring my social media links and add me! Don't
             forget to use the contact form and send a quick shout out.
           </p>
           <div className=" contactRow">

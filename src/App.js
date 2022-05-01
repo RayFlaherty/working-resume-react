@@ -4,7 +4,8 @@ import "./App.css";
 import AboutMe from "./Components/Elements/AboutMe/AboutMe";
 import Gallery from "./Components/Elements/Gallery/Gallery";
 import Education from "./Components/Elements/Education/Education";
-import Contact from "./Components/Contact/Contact";
+import Contact from "./Components/Elements/Contact/Contact";
+import Projects from "./Components/Elements/Projects/Projects";
 
 
 
@@ -43,6 +44,7 @@ function App() {
       <AboutMe />
       <Education />
       <Contact />
+      <Projects/>
   </div>
   );
 }

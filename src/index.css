@@ -34,3 +34,13 @@ a:hover {
 a:active {
   color: blue;
 }
+
+p{
+  text-indent: 5%;
+  text-align:justify ;
+}
+
+
+h2{
+  text-align: center;
+}

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Card from "../../UI/Card/Card";
-import Button from "../../UI/Button/Button";
+import Card from "../../../UI/Card/Card";
+import Button from "../../../UI/Button/Button";
 import classes from "./ContactForm.module.css";
-import ErrorModal from "../../UI/ErrorModal/ErrorModal";
+import ErrorModal from "../../../UI/ErrorModal/ErrorModal";
 
 const ContactForm = (props) => {
   const [enteredName, SetEnteredName] = useState("");
@@ -54,7 +54,7 @@ const ContactForm = (props) => {
         />
       )}
 
-      <Card className={classes.form}>
+      <Card>
         <form onSubmit={sendEmail}>
           <div className={classes.formContent}>
             <header>
@@ -69,10 +69,11 @@ const ContactForm = (props) => {
                 type="text"
                 value={enteredName}
                 onChange={nameChangeHandler}
+                className={classes.input}
               ></input>
             </div>
             <div>
-              {" "}
+              
               <label htmlFor="email">Email:</label>
             </div>
             <div>
@@ -81,19 +82,21 @@ const ContactForm = (props) => {
                 type="text"
                 value={enteredEmail}
                 onChange={emailChangeHandler}
+                className={classes.input}
               ></input>
             </div>
             <div>
               <label htmlFor="message">Message:</label>
             </div>
             <div>
-              {" "}
+              
               <input
-              className={classes.messageHeight}
+             
                 id="message"
                 type="text"
                 value={enteredMessage}
                 onChange={messageChangeHandler}
+                className={classes.input}
               ></input>
             </div>
 

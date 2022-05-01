@@ -13,8 +13,8 @@ const Education = () => {
           <div className="certDisplay">
             <Card className="certStyle smallCertStyleWidth">
               <h3>Graduate of Vanderbilt</h3>
-              <p> Enrolled September of 2021</p>
-              <p> Completed Program March 2022</p>
+              <h5> Enrolled September of 2021</h5>
+              <h5> Completed Program March 2022</h5>
             </Card>
             <Card className="certStyle">
               <img
@@ -30,15 +30,15 @@ const Education = () => {
             </Card>
             <Card className="certStyle certStyle smallCertStyleWidth">
               <h3>Complete React Course</h3>
-              <p> Course Provided by Udemy </p>
+              <h5> Course Provided by Udemy </h5>
             </Card>
           </div>
           <div className="certDisplay">
             <Card className="certStyle smallCertStyleWidth">
               <h3>Metropolitan Nashville Police Department</h3>
               <h3>Police Academy</h3>
-              <p> Enrolled March of 2011</p>
-              <p> Completed Program September 2011</p>
+              <h5> Enrolled March of 2011</h5>
+              <h5> Completed Program September 2011</h5>
             </Card>
             <Card className="certStyle">
               <img
