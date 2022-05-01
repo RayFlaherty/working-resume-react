@@ -10,9 +10,11 @@ h2 {
 }
 
 .cardRow {
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  padding: 2%;
+ justify-content: space-around;
   width: 100%;
 }
 
@@ -22,12 +24,19 @@ h2 {
   border: 1px solid #ececec;
   background-color: #2a2a2a;
   border-radius: 12px;
-  justify-content: center;
- width: 19%;
+  
 }
 
 .linkStyle {
-  display: flex;
   height: 90%;
   width: 90%;
+}
+
+.liLayout {
+  width: 20%;
+}
+
+.p2 {
+  font-size: x-small;
+  text-align: center;
 }

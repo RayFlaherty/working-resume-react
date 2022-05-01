@@ -1,9 +1,13 @@
 import React from "react";
 import classes from "./Nav.module.css";
 import Card from "../../UI/Card/Card";
+import AboutMe from "../AboutMe/AboutMe";
 
 const Nav = (props) => {
   const { navDisplay = [], setCurrentNavDisplay, currentNavDisplay } = props;
+  const aboutMeNav = props => {
+    return <AboutMe/>
+  }
 
   return (
     <Card>
@@ -16,7 +20,7 @@ const Nav = (props) => {
       <div className={classes.navPosition}>
         <ul className={classes.navRow}>
           <li className={classes.navText}>
-            <a data-testid="e1" href="#e1">
+            <a href="#e1" onClick={aboutMeNav}>
               About Me
             </a>
           </li>

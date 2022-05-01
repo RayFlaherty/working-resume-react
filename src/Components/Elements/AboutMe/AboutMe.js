@@ -3,9 +3,9 @@ import Card from "../../UI/Card/Card";
 import "./AboutMe.css";
 import Button from "../../UI/Button/Button";
 
-const AboutMe = () => {
+const AboutMe = props => {
   return (
-    <Card>
+    <Card id="e1">
       <div className="header h1Text">
         <h2> ABOUT ME </h2>
         <Card>
