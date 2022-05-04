@@ -1,5 +1,6 @@
 .layout {
   display: flex;
+
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -33,10 +34,16 @@ h2 {
 }
 
 .liLayout {
-  width: 20%;
+  width: 25%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+ margin: 2%;
+ 
 }
 
 .p2 {
   font-size: x-small;
   text-align: center;
 }
+

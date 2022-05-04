@@ -136,7 +136,7 @@ const Projects = (props) => {
                     <h4>{vandyProjects.title}</h4>
                     <p className={classes.p2}>{vandyProjects.desc}</p>
                     <div>{vandyProjects.link}</div>
-                    <div>{vandyProjects.gitHub}</div>
+                    <div className={classes.gitStyle}>{vandyProjects.gitHub}</div>
                   </div>
                 </Card>
               </li>
