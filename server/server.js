@@ -89,7 +89,24 @@ app.delete("/api/comment/:id", (req, res) => {
 });
 //update comment
 app.put("/api/comment/:id", (req, res) => {
-  const sql = `SELECT comment.*, name AS name from comment LEFT JOIN name ON comment.id= id WHERE comment.id = ?`;
+  const sql = `UPDATE comment SET message = ? WHERE id = ?`;
+  const params = [req.body.message, req.params.id];
+
+  db.query(sql, params, (err, result) => {
+    if (err) {
+      res.status(400).json({ err: err.message });
+    } else if (!result.affectedRows) {
+      res.json({
+        message: "Comment Not Found",
+      });
+    } else {
+      res.json({
+        message: "Success",
+        data: req.body,
+        changes: result.affectedRows,
+      });
+    }
+  });
 });
 
 // db.query(`SELECT * FROM comment WHERE id=1`, (err, row) => {
