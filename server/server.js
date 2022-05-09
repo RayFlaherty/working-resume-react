@@ -29,7 +29,7 @@ app.get("/api/comment", (req, res) => {
       return;
     }
     res.json({
-      message: "success",
+      message: "All Comments",
       data: rows,
     });
   });
@@ -45,7 +45,7 @@ app.get("/api/comment/:id", (req, res) => {
       return;
     }
     res.json({
-      message: "success",
+      message: "Comment Found",
       data: row,
     });
   });
@@ -61,7 +61,7 @@ app.post("/api/comment", ({ body }, res) => {
       return;
     }
     res.json({
-      message: "success",
+      message: "Comment Posted",
       data: body,
     });
   });
@@ -80,7 +80,7 @@ app.delete("/api/comment/:id", (req, res) => {
       });
     } else {
       res.json({
-        message: "comment a-gonner",
+        message: "Comment Removed",
         changes: result.affectedRows,
         id: req.params.id,
       });
@@ -101,7 +101,7 @@ app.put("/api/comment/:id", (req, res) => {
       });
     } else {
       res.json({
-        message: "Success",
+        message: "Comment Updated",
         data: req.body,
         changes: result.affectedRows,
       });
@@ -109,31 +109,7 @@ app.put("/api/comment/:id", (req, res) => {
   });
 });
 
-// db.query(`SELECT * FROM comment WHERE id=1`, (err, row) => {
-//   if (err) {
-//     console.log(err);
-//   }
-//   console.log(row);
-// });
-// app.use((req, res) => {
-//   res.status(404).end();
-//});
-// db.query(`DELETE FROM comment WHERE id = 1`, (err, result) => {
-//   if (err) {
-//     console.log(err);
-//   }
-//   console.log(result)
-// });
 
-// const sql = `INSERT INTO comment (id, name, message) VALUES (?,?,?)`;
-// const params = [1, "Raymond Flaherty", "I'm Back Baby!"];
-
-// db.query(sql, params, (err, result) => {
-//   if (err) {
-//     console.log(err);
-//   }
-//   console.log(result);
-// });
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
